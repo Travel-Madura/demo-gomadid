@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Demo GoMad</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f5f5f5; color: #1f2933; min-height: 100vh; }
+        .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+        .head { text-align: center; margin-bottom: 34px; }
+        .head h1 { font-size: 30px; font-weight: 800; color: #C1121F; }
+        .head p { color: #6b7280; margin-top: 8px; font-size: 15px; }
+        .badge { display: inline-block; background: #C1121F; color: #fff; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; letter-spacing: 1px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+        .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 16px; padding: 24px; text-align: center; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; text-decoration: none; color: inherit; display: block; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,.08); border-color: #C1121F; }
+        .card .icon { width: 60px; height: 60px; margin: 0 auto 14px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 30px; }
+        .card h2 { font-size: 18px; font-weight: 700; }
+        .card p { font-size: 13px; color: #6b7280; margin-top: 6px; line-height: 1.5; }
+        .card .btn { display: inline-block; margin-top: 14px; background: #C1121F; color: #fff; font-weight: 700; font-size: 13px; padding: 8px 20px; border-radius: 8px; }
+        .c-customer .icon { background: #fde8e9; color: #C1121F; }
+        .c-driver .icon { background: #e0edff; color: #2563eb; }
+        .c-agency .icon { background: #e6f7ef; color: #15803d; }
+        .note { margin-top: 28px; background: #fff8e6; border: 1px solid #f5d78e; border-radius: 12px; padding: 16px 18px; font-size: 13px; color: #7a5c12; line-height: 1.6; }
+        .note strong { color: #5c450e; }
+        .back { display: inline-block; margin-top: 22px; color: #6b7280; font-size: 13px; text-decoration: none; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="head">
+        <span class="badge">LIVE DEMO</span>
+        <h1>Coba Pengalaman GoMad</h1>
+        <p>Jelajahi platform sebagai Customer, Driver, atau Agen — semua data demo, tanpa bisa mengubah apa pun.</p>
+    </div>
+
+    <div class="grid">
+        <a class="card c-customer" href="/customer/home/">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0 1 7-7h2a7 7 0 0 1 7 7v1"/></svg></div>
+            <h2>Customer</h2>
+            <p>Cari jadwal, pilih kursi, lihat e-ticket, chat driver, dan lacak perjalanan.</p>
+            <span class="btn">Masuk Demo</span>
+        </a>
+        <a class="card c-driver" href="/driver/dashboard/">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 9h12v8H1z"/><path d="M13 11h4l3 3v3h-7"/><circle cx="6" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg></div>
+            <h2>Driver</h2>
+            <p>Jadwal hari ini, kelola penumpang, transfer, level, rental, dan chat customer.</p>
+            <span class="btn">Masuk Demo</span>
+        </a>
+        <a class="card c-agency" href="/agency/dashboard/">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V6a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v15M14 10h5a2 2 0 0 1 2 2v9M8 7h2M8 11h2M8 15h2"/></svg></div>
+            <h2>Agency</h2>
+            <p>Kelola jadwal, penumpang, driver, pembayaran, dan laporan travel Anda.</p>
+            <span class="btn">Masuk Demo</span>
+        </a>
+    </div>
+
+    <div class="note">
+        <strong>Mode Demo:</strong> seluruh data yang tampil adalah data contoh/manipulatif (bukan data asli). Semua halaman bisa dijelajahi, namun tidak ada aksi yang dapat dijalankan — mode hanya-baca.
+    </div>
+
+    <a class="back" href="https://gomad.id">&larr; Kembali ke situs</a>
+</div>
+<script type="application/json" id="gm-demo-valid">["/", "/", "/agency/bookings", "/agency/bookings/1", "/agency/bookings/10", "/agency/bookings/11", "/agency/bookings/12", "/agency/bookings/13", "/agency/bookings/14", "/agency/bookings/15", "/agency/bookings/16", "/agency/bookings/17", "/agency/bookings/18", "/agency/bookings/19", "/agency/bookings/2", "/agency/bookings/20", "/agency/bookings/21", "/agency/bookings/22", "/agency/bookings/23", "/agency/bookings/3", "/agency/bookings/4", "/agency/bookings/5", "/agency/bookings/6", "/agency/bookings/7", "/agency/bookings/8", "/agency/bookings/9", "/agency/dashboard", "/agency/demo-agency-1", "/agency/demo-agency-2", "/agency/drivers", "/agency/drivers/15/edit", "/agency/drivers/4/edit", "/agency/drivers/create", "/agency/level", "/agency/manual", "/agency/profile", "/agency/promos", "/agency/rental-promos", "/agency/rental-vehicles", "/agency/rental-vehicles/1/setup", "/agency/rental-vehicles/2/setup", "/agency/rental-vehicles/3/setup", "/agency/rental-vehicles/4/setup", "/agency/rental-vehicles/5/setup", "/agency/rental/dashboard", "/agency/rentals", "/agency/rentals/1", "/agency/rentals/10", "/agency/rentals/11", "/agency/rentals/12", "/agency/rentals/13", "/agency/rentals/2", "/agency/rentals/3", "/agency/rentals/4", "/agency/rentals/5", "/agency/rentals/6", "/agency/rentals/7", "/agency/rentals/8", "/agency/rentals/9", "/agency/reports", "/agency/reviews", "/agency/schedule-proposals", "/agency/schedules", "/agency/schedules/1", "/agency/schedules/1/transfer", "/agency/schedules/10", "/agency/schedules/10/transfer", "/agency/schedules/11", "/agency/schedules/11/transfer", "/agency/schedules/2", "/agency/schedules/2/transfer", "/agency/schedules/3", "/agency/schedules/3/transfer", "/agency/schedules/4", "/agency/schedules/4/transfer", "/agency/schedules/5", "/agency/schedules/5/transfer", "/agency/schedules/6", "/agency/schedules/6/transfer", "/agency/schedules/7", "/agency/schedules/7/transfer", "/agency/schedules/8", "/agency/schedules/8/transfer", "/agency/schedules/9", "/agency/schedules/9/transfer", "/agency/schedules/create", "/agency/setup", "/agency/transfers", "/agency/vehicles", "/agency/vehicles/1/edit", "/agency/vehicles/2/edit", "/agency/vehicles/3/edit", "/agency/vehicles/4/edit", "/agency/vehicles/5/edit", "/agency/vehicles/create", "/agency/wallet", "/agency/wallet/topup", "/agency/withdrawals", "/agency/withdrawals/create", "/customer/booking/1", "/customer/booking/1/detail", "/customer/booking/1/e-ticket", "/customer/booking/10", "/customer/booking/10/detail", "/customer/booking/10/e-ticket", "/customer/booking/11", "/customer/booking/11/detail", "/customer/booking/11/e-ticket", "/customer/booking/12", "/customer/booking/12/detail", "/customer/booking/12/e-ticket", "/customer/booking/13", "/customer/booking/13/detail", "/customer/booking/13/e-ticket", "/customer/booking/14", "/customer/booking/14/detail", "/customer/booking/14/e-ticket", "/customer/booking/15", "/customer/booking/15/detail", "/customer/booking/15/e-ticket", "/customer/booking/16", "/customer/booking/16/detail", "/customer/booking/16/e-ticket", "/customer/booking/17", "/customer/booking/17/detail", "/customer/booking/17/e-ticket", "/customer/booking/18", "/customer/booking/18/detail", "/customer/booking/18/e-ticket", "/customer/booking/19", "/customer/booking/19/detail", "/customer/booking/19/e-ticket", "/customer/booking/2", "/customer/booking/2/detail", "/customer/booking/2/e-ticket", "/customer/booking/20", "/customer/booking/20/detail", "/customer/booking/20/e-ticket", "/customer/booking/21", "/customer/booking/21/detail", "/customer/booking/21/e-ticket", "/customer/booking/22", "/customer/booking/22/detail", "/customer/booking/22/e-ticket", "/customer/booking/23", "/customer/booking/23/detail", "/customer/booking/23/e-ticket", "/customer/booking/3", "/customer/booking/3/detail", "/customer/booking/3/e-ticket", "/customer/booking/4", "/customer/booking/4/detail", "/customer/booking/4/e-ticket", "/customer/booking/5", "/customer/booking/5/detail", "/customer/booking/5/e-ticket", "/customer/booking/6", "/customer/booking/6/detail", "/customer/booking/6/e-ticket", "/customer/booking/7", "/customer/booking/7/detail", "/customer/booking/7/e-ticket", "/customer/booking/8", "/customer/booking/8/detail", "/customer/booking/8/e-ticket", "/customer/booking/9", "/customer/booking/9/detail", "/customer/booking/9/e-ticket", "/customer/booking/create/1", "/customer/booking/create/10", "/customer/booking/create/11", "/customer/booking/create/2", "/customer/booking/create/3", "/customer/booking/create/4", "/customer/booking/create/5", "/customer/booking/create/6", "/customer/booking/create/7", "/customer/booking/create/8", "/customer/booking/create/9", "/customer/bookings", "/customer/documents", "/customer/home", "/customer/level", "/customer/my-bookings", "/customer/profile", "/customer/rentals", "/customer/rentals/1", "/customer/rentals/10", "/customer/rentals/11", "/customer/rentals/12", "/customer/rentals/13", "/customer/rentals/2", "/customer/rentals/3", "/customer/rentals/4", "/customer/rentals/5", "/customer/rentals/6", "/customer/rentals/7", "/customer/rentals/8", "/customer/rentals/9", "/customer/rentals/browse", "/customer/rentals/create/1", "/customer/rentals/create/2", "/customer/rentals/create/3", "/customer/rentals/create/4", "/customer/search", "/customer/setup", "/demo", "/demo/exit", "/download-app", "/driver/assignments", "/driver/dashboard", "/driver/level", "/driver/profile", "/driver/propose-schedule", "/driver/rentals", "/driver/rentals/1", "/driver/rentals/10", "/driver/rentals/11", "/driver/rentals/12", "/driver/rentals/13", "/driver/rentals/2", "/driver/rentals/3", "/driver/rentals/4", "/driver/rentals/5", "/driver/rentals/6", "/driver/rentals/7", "/driver/rentals/8", "/driver/rentals/9", "/driver/transfers", "/driver/transfers/create/1", "/driver/transfers/create/10", "/driver/transfers/create/11", "/driver/transfers/create/2", "/driver/transfers/create/3", "/driver/transfers/create/4", "/driver/transfers/create/5", "/driver/transfers/create/6", "/driver/transfers/create/7", "/driver/transfers/create/8", "/driver/transfers/create/9", "/driver/travel", "/driver/travel/1", "/driver/travel/10", "/driver/travel/11", "/driver/travel/2", "/driver/travel/3", "/driver/travel/4", "/driver/travel/5", "/driver/travel/6", "/driver/travel/7", "/driver/travel/8", "/driver/travel/9", "/e-ticket", "/forgot-password", "/listing", "/login", "/register", "/rental", "/search"]</script>
+<script id="gm-demo-toast-script">
+(function(){
+  var VALID = new Set(JSON.parse(document.getElementById('gm-demo-valid').textContent));
+  function norm(h){ var i=h.indexOf('#'); if(i>=0)h=h.slice(0,i); i=h.indexOf('?'); if(i>=0)h=h.slice(0,i); if(h.length>1&&h.endsWith('/'))h=h.slice(0,-1); return h; }
+  function toast(){
+    var t=document.getElementById('gm-demo-toast');
+    if(!t){
+      t=document.createElement('div'); t.id='gm-demo-toast'; t.setAttribute('role','alert');
+      t.style.cssText='position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(12px);background:#C1121F;color:#fff;padding:13px 22px;border-radius:14px;font:600 14px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;box-shadow:0 12px 34px rgba(17,17,17,.28);z-index:999999;display:flex;align-items:center;gap:11px;opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;max-width:92vw;text-align:left';
+      t.innerHTML='<span style="display:inline-flex;flex-shrink:0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M12 11v5"/></svg></span><span><b>Mode Demo</b><br><span style="font-weight:400;opacity:.95">Hanya melihat, tidak dapat mengubah data.</span></span>';
+      document.body.appendChild(t);
+    }
+    requestAnimationFrame(function(){ t.style.opacity='1'; t.style.transform='translateX(-50%) translateY(0)'; });
+    clearTimeout(t._h); t._h=setTimeout(function(){ t.style.opacity='0'; t.style.transform='translateX(-50%) translateY(12px)'; },3000);
+  }
+  document.addEventListener('submit', function(e){ e.preventDefault(); e.stopPropagation(); toast(); }, true);
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if(a){
+      var href = a.getAttribute('href') || '';
+      if(href.charAt(0)==='/'){
+        var h = norm(href);
+        if(h && !VALID.has(h)){ e.preventDefault(); e.stopPropagation(); toast(); return; }
+      }
+    }
+    var b = e.target && e.target.closest ? e.target.closest('button[data-save],#btnSaveSelfie,#btnStartCamera,#btnCapture,#btnStopCamera,#btnRetake') : null;
+    if(b){ e.preventDefault(); e.stopPropagation(); toast(); }
+  }, true);
+  // ---- KEMBALI KE DASHBOARD (halaman publik, kecuali /demo & auth) ----
+  var p = location.pathname;
+  var dash = null;
+  if (p.indexOf('/customer')===0) dash='/customer/home';
+  else if (p.indexOf('/driver')===0) dash='/driver/dashboard';
+  else if (p.indexOf('/agency')===0) dash='/agency/dashboard';
+  if (dash){ try{ sessionStorage.setItem('gm-demo-dash', dash); }catch(e){} }
+  var isAuth = p.indexOf('/login')===0 || p.indexOf('/register')===0 || p.indexOf('/forgot-password')===0;
+  var isDemo = p.indexOf('/demo')===0;
+  if (!dash && !isAuth && !isDemo){
+    var back = '/demo/';
+    try{ var s=sessionStorage.getItem('gm-demo-dash'); if(s) back=s; }catch(e){}
+    var btn=document.createElement('a');
+    btn.id='gm-demo-back'; btn.href=back;
+    btn.innerHTML='&#8592; <span>Dashboard</span>';
+    btn.style.cssText='position:fixed;top:84px;left:12px;z-index:99999;background:#ffffff;color:#BA1826;border:1px solid #BA1826;padding:9px 16px;border-radius:999px;font:700 13px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-decoration:none;display:inline-flex;align-items:center;gap:7px;box-shadow:0 6px 18px rgba(17,17,17,.18);';
+    document.body.appendChild(btn);
+  }
+})();
+</script>
+
+</body>
+</html>
